@@ -27,67 +27,71 @@
 				<!-- Banner -->
 				<section id="banner">
 					<div class="inner">
-						<style>
-							h2 {
-								text-transform: none;
-							}
-				
-							#typing-animation {
-								text-transform: none;
-								font-size: 1em;
-								margin-top: 10px;
-							}
-				
-							#typing-animation span {
-								display: block;
-							}
-				
-							.not-bold {
-								font-weight: normal;
-							}
-						</style>
-						<h2>
-							<span class="not-bold">Hi, I'm</span> <span id="typing-animation"></span>
-							<div id="typing-animation-subtitle"></div>
-						</h2>
-						<p>
-							<span id="typing-animation2"></span>
-						</p>
+					  <style>
+						h2 {
+						  text-transform: none;
+						}
+				  
+						#typing-animation {
+						  text-transform: none;
+						  font-size: 1em;
+						  margin-top: 10px;
+						}
+				  
+						#typing-animation span {
+						  display: block;
+						}
+				  
+						.not-bold {
+						  font-weight: normal;
+						}
+					  </style>
+					  <h2>
+						<span class="not-bold">Hi, I'm</span> <span id="typing-animation"></span>
+						<div id="typing-animation-subtitle"></div>
+					  </h2>
+					  <p>
+						<span id="typing-animation2"></span>
+					  </p>
 					</div>
-				</section>
-				<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
-				<script>
+				  </section>
+				  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+				  <script>
 					var typingAnimation = new Typed('#typing-animation', {
-						strings: ['Palash'],
-						typeSpeed: 35,
-						backSpeed: 50,
-						startDelay: 1000,
-						backDelay: 2000,
-						loop: false,
-						cursorChar: '',
-						onComplete: function (self) {
-							var typingAnimationSubtitle = new Typed('#typing-animation-subtitle', {
-								strings: ['Transforming User Journeys into Profitable Conversions'],
-								typeSpeed: 30,
-								backSpeed: 50,
-								startDelay: 0,
-								backDelay: 0000,
-								loop: false,
-								cursorChar: '',
-								onComplete: function (self) {
-									var typingAnimation2 = new Typed('#typing-animation2', {
-										strings: ["AI-POWERED"],
-										typeSpeed: 50,
-										backSpeed: 50,
-										startDelay: 1000,
-										backDelay: 2000,
-										loop: true,
-									});
-								},
+					  strings: ['Palash'],
+					  typeSpeed: 35,
+					  backSpeed: 50,
+					  startDelay: 1000,
+					  backDelay: 2000,
+					  loop: false,
+					  cursorChar: '',
+					  onComplete: function (self) {
+						var typingAnimationSubtitle = new Typed('#typing-animation-subtitle', {
+						  strings: ['Transforming User Journeys into Profitable Conversions'],
+						  typeSpeed: 30,
+						  backSpeed: 50,
+						  startDelay: 0,
+						  backDelay: 0000,
+						  loop: false,
+						  cursorChar: '',
+						  onComplete: function (self) {
+							var typingAnimation2 = new Typed('#typing-animation2', {
+							  strings: ['Using AI for cutting-edge, data-driven campaigns that win.', 'Creating bespoke digital experiences that captivate your audience.', 'Crafting innovative solutions that drive business growth.'],
+							  typeSpeed: 50,
+							  backSpeed: 50,
+							  startDelay: 1000,
+							  backDelay: 2000,
+							  loop: true,
+							  showCursor: true,
+							  backDelay: 1500,
+							  backSpeed: 30,
+							  smartBackspace: true
 							});
-						},
+						  },
+						});
+					  },
 					});
-				</script>
+				  </script>
 				<!-- Wrapper -->
 					<section id="wrapper">
 
