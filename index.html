@@ -67,20 +67,31 @@
 					  loop: false,
 					  cursorChar: '',
 					  onComplete: function (self) {
-					  document.getElementById('typing-animation-subtitle').textContent = 'Transforming User Journeys into Profitable Conversions';
-
-var typingAnimation2 = new Typed('#typing-animation2', {
-  strings: ['Leveraging Artifical Intelligence for data-driven campaigns that win.', 'Creating bespoke digital experiences that captivate your audience.', 'Crafting innovative solutions that drive business growth.'],
-  typeSpeed: 30,
-  backSpeed: 15,
-  startDelay: 500,
-  backDelay: 2000,
-  loop: true,
-  showCursor: true,
-  backDelay: 1500,
-  backSpeed: 30,
-  smartBackspace: true
-});
+						var typingAnimationSubtitle = new Typed('#typing-animation-subtitle', {
+						  strings: ['Transforming User Journeys into Profitable Conversions'],
+						  typeSpeed: 30,
+						  backSpeed: 50,
+						  startDelay: 0,
+						  backDelay: 0000,
+						  loop: false,
+						  cursorChar: '',
+						  onComplete: function (self) {
+							var typingAnimation2 = new Typed('#typing-animation2', {
+							  strings: ['Leveraging Artifical Intelligence for data-driven campaigns that win.', 'Creating bespoke digital experiences that captivate your audience.', 'Crafting innovative solutions that drive business growth.'],
+							  typeSpeed: 30,
+							  backSpeed: 15,
+							  startDelay: 500,
+							  backDelay: 2000,
+							  loop: true,
+							  showCursor: true,
+							  backDelay: 1500,
+							  backSpeed: 30,
+							  smartBackspace: true
+							});
+						  },
+						});
+					  },
+					});
 				  </script>
 				<!-- Wrapper -->
 					<section id="wrapper">
